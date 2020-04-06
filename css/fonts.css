@@ -7,3 +7,58 @@
     font-weight: 300;
     font-style: normal;
 }
+
+/* Roboto */
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('./fonts/roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('./fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('./fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('./fonts/roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./fonts/roboto/Roboto-Light.woff2') format('woff2'),
+        url('./fonts/roboto/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* oranienbaum */
+
+@font-face {
+    font-family: 'Oranienbaum';
+    src: url('./fonts/oranienbaum/Oranienbaum.woff2') format('woff2'),
+        url('./fonts/oranienbaum/Oranienbaum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* mirza */
+
+@font-face {
+    font-family: 'Mirza';
+    src: url('./fonts/mirza/Mirza-Regular.woff2') format('woff2'),
+        url('./fonts/mirza/Mirza-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
