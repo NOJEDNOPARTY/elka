@@ -309,7 +309,7 @@
 
 
 .about-wrapper {
-	padding: 145px 0 398px;
+	padding: 145px 0 115px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -435,15 +435,153 @@
 	.gallery .owl-dot span {display: none;}
 
 
+/* helped styles */
+
+.helped {
+	padding:151px 0 113px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.helped .title {
+		margin-bottom: 93px;
+		font-family: 'Oranienbaum';
+		color: #423E3C;
+	}
+
+	.helped-list {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		margin-bottom: 45px;
+		padding: 56px 65px 5px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 8px;
+		box-shadow: 0px 23px 26px rgba(0, 0, 0, 0.09);
+	}
+
+	.helped-item {
+		width: 100%;
+		max-width: 190px;
+		max-height: 139px;
+		overflow: hidden;
+		margin: 0 10px 51px;
+		box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+	}
+
+	.helped p {
+		font-family: 'Roboto-Regular';
+		font-size: 25px;
+		line-height: 29px;
+		text-align: center;
+		color: #423E3C;
+	}
+
+/* order styles */
+
+
+.order-section {
+	padding: 111px 0 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.order-text {
+		font-family: 'Oranienbaum';
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.order-text-s {
+		margin-bottom: 13px;
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.order-text-xs {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.order-text-l {
+		margin-bottom: 24px;
+		font-size: 51px;
+		line-height: 59px;
+	}
+	.order-text-m {
+		margin-bottom: 62px;
+		font-size: 40px;
+		line-height: 46px;
+	}
+
+	.order-section .btn {margin: 0 auto 62px;}
 
 
 
+/* contacts styles */
 
+.contacts {position: relative;}
 
+	.contacts .map,
+	.contacts .map iframe {width: 100% !important;}
 
+	.contacts-item {
+		position: absolute;
+		top: 50%;
+		left: 405px;
+		transform: translateY(-50%);
+		width: 100%;
+		max-width: 475px;
+		padding: 36px 53px 45px 63px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+	}
 
+	.contacts-title{
+		margin-bottom: 15px;
+		font-family: 'Oranienbaum';
+		font-size: 30px;
+		line-height: 35px;
+		color: #423E3C;
+	}
 
+	.contacts-link {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 15px;
+		font-family: 'Roboto-Regular';
+		font-size: 20px;
+		line-height: 23px;
+		color: #423E3C;
+	}
 
+	.contacts-link-img {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 29px;
+		min-width: 29px;
+		margin-right: 10px;
+	}
+
+	.social-icons {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.social-icons a:not(:last-child) {margin-right: 10px;}
+
+	.contacts-logo {
+		position: absolute;
+		top: 69px;
+		right: 60px;
+	}
 
 
 
