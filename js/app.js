@@ -40,6 +40,15 @@ var common = {
 			nav: false,
 			dots: true
 		});
+		$('.letters-slider').owlCarousel({
+			items:3,
+			loop: true,
+			center: true,
+			autoHeight:true,
+			lazyLoad: true,
+			nav: true,
+			dots: false
+		});
 	},
 };
 

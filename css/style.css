@@ -309,7 +309,7 @@
 
 
 .about-wrapper {
-	padding: 145px 0 115px;
+	padding: 145px 0 125px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -433,6 +433,318 @@
 	}
 
 	.gallery .owl-dot span {display: none;}
+
+
+/* helped styles */
+
+.quote {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:343px 0 433px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	.quote-black {padding:429px 0 217px;}
+	.services-quote {padding:447px 0 327px;}
+	.quote-img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.quote-black .quote-img{
+		bottom: 0;
+		left: auto;
+		right: 0;
+	}
+	.quote-img img{
+		position: relative;
+		z-index: 2;
+		max-width: 770px;
+		width: 100%;
+	}
+
+	.quote-black  .quote-img img {max-width: 1572px;}
+
+	.quote-img-sector {
+		position: absolute;
+		top: 366px;
+		right: -88px;
+		z-index: 1;
+		width: 100%;
+		max-width: 448px;
+		padding: 68px 41px 80px 121px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.quote-black .quote-img-sector {
+		top: 151px;
+		right: 489px;
+	}
+	.services-quote .quote-img-sector{
+		top: 4px;
+		right: -241px;
+	}
+
+	.quote-name{
+		padding-bottom: 4px;
+		font-family: 'Roboto-Medium';
+		font-size: 22px;
+		line-height: 26px;
+		color: #423E3C;
+	}
+
+	.quote-img-sector p {
+		font-family: 'Roboto-Regular';
+		font-size: 18px;
+		line-height: 21px;
+		color: #423E3C;
+	}
+
+	.quote-cnt {
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		max-width: 845px;
+		margin:0 0 0  223px;
+	}
+
+	.quote-black .quote-cnt {margin:0 223px 0 0;}
+	.services-quote .quote-cnt {margin:0 0 0  245px;}
+	.quote-cnt p {
+		font-family: 'Oranienbaum';
+		font-size: 45px;
+		line-height: 52px;
+		text-align: center;
+		color: #423E3C;
+	}
+
+	.quote-black .quote-cnt p {color: #ffffff;}
+
+	.quote-commas {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: 'Oranienbaum';
+		font-size: 219px;
+		line-height: 219px;
+		color: #C9A994;
+	}
+
+	.quote-commas {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.quote-comma-top {top: -65px;}
+	.quote-comma-bottom {bottom: -81px;}
+
+	.commas-triangle {
+		width: 100%;
+		max-width: 280px;
+	}
+
+	.quote-commas-img {margin: 0 48px;}
+
+	.quote-comma-bottom .quote-commas-img {margin: 0 27px;}
+
+/* service styles */
+
+.services-section {
+	padding: 127px 0 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	.services-section .title {
+		margin-bottom: 90px;
+		font-family: 'Oranienbaum';
+		color: #423E3C;
+	}
+
+	.services-items {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1150px;
+		margin: 0 auto 101px;
+	}
+
+	.services-item {
+		position: relative;
+		width: 100%;
+		max-width: 255px;
+		height: 436px;
+		padding: 38px 17px 88px 32px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 10px;
+		box-shadow: 0px 19px 26px rgba(0, 0, 0, 0.09);
+	}
+
+	.services-item-title {
+		margin-bottom: 12px;
+		font-family: 'Oranienbaum';
+		font-size: 25px;
+		line-height: 29px;
+		color: #423E3C;
+	}
+
+	.services-list {
+		padding: 0;
+		margin: 0 0 13px;
+		list-style: none;
+	}
+
+	.services-list li,
+	.services-gradient-text,
+	.services-list-title {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.services-list li {
+		margin-bottom: 6px;
+		font-family: 'Roboto-Regular';
+		color: #423E3C;
+	}
+
+	.services-list-light li {font-family: 'Roboto-Light';}
+
+	.services-gradient-text {
+		margin-bottom: 17px;
+		font-family: 'Roboto-Bold';
+		background: -webkit-linear-gradient(#EEB67A, #BC8B56);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.services-list-title {
+		margin-bottom: 9px;
+		font-family: 'Roboto-Medium';
+		color: #423E3C;
+	}
+
+	.services-item .btn {
+		position: absolute;
+		bottom: 28px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 201px;
+		height: 43px;
+	}
+
+/* letters styles */
+
+.letters {
+	padding: 102px 0 139px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.letters .wrapper {max-width: 1294px;}
+
+	.letters .title {
+		margin-bottom: 17px;
+		font-family: 'Oranienbaum';
+		color: #ffffff;
+	}
+
+	.letters .subtitle {
+		margin-bottom: 65px;
+		font-family: 'Roboto-Regular';
+		font-size: 32px;
+		line-height: 37px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	.letters-slider {
+		width: 100%;
+		max-width: 1262px;
+		padding: 0 72px;
+	}
+
+	.letter {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 362px;
+		margin: 59px 0;
+		box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.09);
+		transition: 0.3s ease;
+	}
+
+	.letter img {
+		width: 100%;
+		border-radius: 10px;
+		transition: 0.3s ease;
+	}
+	.letters-slider .owl-item.center {
+		position: relative;
+		z-index: 2;
+	}
+	.letters-slider .owl-item:not(.active) {opacity: 0;}
+	.letters-slider .owl-item:not(.center) .letter img {filter: blur(3px);}
+	.letters-slider .owl-item.center .letter {transform: scale(1.15);}
+
+	.letters-slider .owl-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	.letters-slider .owl-nav span {display: none;}
+	
+	.letters-slider .owl-nav button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		background: linear-gradient(90.07deg, #EEB67A 17.3%, #BC8B56 106.71%) !important;
+		border-radius: 50%;
+		transition: 0.3s ease;
+	}
+	
+	.letters-slider .owl-nav  button:hover{box-shadow: none;}
+	
+	.letters-slider .owl-nav  button::before {
+		content: '';
+		position: absolute;
+		display: block;
+		left: calc(50% - 10px);
+		top: calc(50% - 7.5px);
+		width: 20px;
+		height: 15px;
+		background-image: url('../images/arrow-left.svg') !important;
+		background-repeat: no-repeat !important;
+		background-size: contain !important;
+	}
+
+	
+	.letters-slider .owl-nav button.owl-next::before {transform: rotate(180deg);}
+	
+
+	.letters-slider .owl-nav button.owl-prev {left: 0;}
+
+	.letters-slider .owl-nav button.owl-next {right: 0;}
+
 
 
 /* helped styles */
