@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,30 +34,57 @@
 </head>
 <body>
 
-    <div id="banner" class="banner-wrapper" style="background-image: url('./images/banner-img.jpg');">
+    <div id="banner" class="banner-wrapper b-lazy" data-src="./images/banner-img.jpg">
+        <div class="mobile-menu">
+            <a href="#banner" class="logo anchor"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/logo.svg" alt=""></a>
+            <a href="#" class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
         <header>
+            <a href="#" class="menu-trigger open nav-close">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="nav-mobile">
+                <div class="wrapper">
+                    <nav>
+                        <a class="anchor" href="#about">О студии</a>
+                        <a class="anchor" href="#portfolio">Портфолио</a>
+                        <a class="anchor" href="#steps">Дизайн-проект</a>
+                        <a class="anchor" href="#services">Услуги и цены</a>
+                        <a class="anchor" href="#reviews">Отзывы</a>
+                        <a class="anchor" href="#contacts">Контакты</a>
+                        <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать стоимость проекта</a>
+                    </nav>
+                </div>
+            </div>
             <div class="wrapper">
                 <nav>
-                    <a class="anchor" href="#">О студии</a>
-                    <a class="anchor" href="#">Портфолио</a>
-                    <a class="anchor" href="#">Дизайн-проект</a>
-                    <a class="anchor" href="#">Услуги и цены</a>
-                    <a class="anchor" href="#">Отзывы</a>
-                    <a class="anchor" href="#">Контакты</a>
-                    <a href="#" class="btn">Рассчитать стоимость проекта</a>
+                    <a class="anchor" href="#about">О студии</a>
+                    <a class="anchor" href="#portfolio">Портфолио</a>
+                    <a class="anchor" href="#steps">Дизайн-проект</a>
+                    <a class="anchor" href="#services">Услуги и цены</a>
+                    <a class="anchor" href="#reviews">Отзывы</a>
+                    <a class="anchor" href="#contacts">Контакты</a>
+                    <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать стоимость проекта</a>
                 </nav>
                 <div class="header-bottom">
-                    <a href="#" class="logo"><img src="./images/logo.svg" alt=""></a>
+                    <a href="#banner" class="logo anchor"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/logo.svg" alt=""></a>
                     <div class="header-info">
                         <a href="#" class="header-info-item header-info-item-link">
-                            <img src="./images/link-icon.svg" alt="link-icon">
+                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/link-icon.svg" alt="link-icon">
                             <span>Авторский сайт <br> Елены Калининой</span>
                         </a>
                         <a href="tel:8495XXXXXXX" class="header-info-item header-info-item-tel">
-                            <img src="./images/tel-icon.svg" alt="tel-icon">
+                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/tel-icon.svg" alt="tel-icon">
                             <span>8 (495) XXX-XX-XX</span>
                         </a>
-                        <a href="#" class="btn-callback">Обратный звонок</a>
+                        <a href="#" class="btn-callback call-popup" data-popup="consultingPopup">Обратный звонок</a>
+                        <a href="#" class="btn btn-nav call-popup" data-popup="calculatePopup">Рассчитать стоимость проекта</a>
                     </div>
                 </div>
             </div>
@@ -75,15 +102,15 @@
                     <div class="banner-list-item">Хостелы</div>
                 </div>
                 <div class="banner-buttons">
-                    <a href="#" class="btn btn-big">Назначить встречу</a>
-                    <a href="#" class="btn btn-big btn-nobg">Примеры работ</a>
+                    <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">Назначить встречу</a>
+                    <a href="#portfolio" class="btn btn-big btn-nobg anchor">Примеры работ</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="founder" style="background-image: url('./images/founder-bg.jpg');">
+    <div class="founder b-lazy" data-src="./images/founder-bg.jpg">
         <div class="wrapper">
-            <div class="founder-cnt" style="background-image: url('./images/founder-cnt-bg.png');">
+            <div class="founder-cnt b-lazy" data-src="./images/founder-cnt-bg.png">
                 <div class="founder-title">Елена Калинина</div>
                 <div class="founder-subtitle">Основатель и руководитель студии "ELKA Interiors"</div>
                 <div class="founder-text">
@@ -92,16 +119,16 @@
                 </div>
                 <a href="#" class="founder-more popup-trigger" data-popup="founderMore">Читать полностью</a>
                 <div class="founder-buttons">
-                    <a href="#" class="btn btn-big">Начать сотрудничество</a>
+                    <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">Начать сотрудничество</a>
                     <a href="#portfolio" class="portfolio-link anchor">Портфолио</a>
                 </div>
             </div>
             <div class="founder-img">
-                <img src="./images/founder-img.png" alt="founder-img">
+                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/founder-img.png" alt="founder-img">
             </div>
         </div>
     </div>
-    <div class="about-wrapper" style="background-image: url('./images/about-bg.jpg');">
+    <div id="about" class="about-wrapper b-lazy" data-src="./images/about-bg.jpg">
         <div class="wrapper">
             <div class="about">
                 <div class="title">ELKA Interiors - это ...</div>
@@ -109,32 +136,32 @@
                     <div class="about-column about-column-1">
                         <div class="about-item">
                             <div class="about-item-img">
-                                <img src="./images/about-item-img-1.svg" alt="about-item-img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/about-item-img-1.svg" alt="about-item-img">
                                 <span class="about-item-number">79</span>
                             </div>
                             <p>реализованных <br> проектов</p>
                         </div>
                         <div class="about-item">
                             <div class="about-item-img">
-                                <img src="./images/about-item-img-3.svg" alt="about-item-img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/about-item-img-3.svg" alt="about-item-img">
                             </div>
                             <p>Проекты в РФ, Украине, <br> США, Швейцарии, Италии, <br> Франции, Великобитании</p>
                         </div>
                     </div>
                     <div class="about-column about-column-2">
-                        <img src="./images/group-img.png" alt="group-img">
+                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/group-img.png" alt="group-img">
                     </div>
                     <div class="about-column about-column-3">
                         <div class="about-item">
                             <div class="about-item-img">
-                                <img src="./images/about-item-img-2.svg" alt="about-item-img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/about-item-img-2.svg" alt="about-item-img">
                                 <span class="about-item-number">10</span>
                             </div>
                             <p>лет на рынке <br> коммерческого дизайна</p>
                         </div>
                         <div class="about-item">
                             <div class="about-item-img">
-                                <img src="./images/about-item-img-4.svg" alt="about-item-img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/about-item-img-4.svg" alt="about-item-img">
                             </div>
                             <p>Победитель конкурса <br> «Реальный интерьер 2017»</p>
                         </div>
@@ -142,7 +169,7 @@
                     <div class="about-column about-column-4">
                         <div class="about-item">
                             <div class="about-item-img">
-                                <img src="./images/about-item-img-5.svg" alt="about-item-img">
+                                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/about-item-img-5.svg" alt="about-item-img">
                             </div>
                             <p>Участник ТВ проекта <br> «Фазенда» на Первом канале</p>
                         </div>
@@ -151,10 +178,10 @@
             </div>
         </div>
     </div>
-    <div class="quote" style="background-image: url('./images/quote-bg.jpg');">
+    <div class="quote b-lazy" data-src="./images/quote-bg.jpg">
         <div class="quote-img">
-            <img src="./images/quote-img.png" alt="quote">
-            <div class="quote-img-sector" style="background-image: url('./images/quote-img-sector.png');">
+            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/quote-img.png" alt="quote">
+            <div class="quote-img-sector b-lazy" data-src="./images/quote-img-sector.png">
                 <div class="quote-name">Елена Калинина</div>
                 <p>Основатель и руководитель студии "ELKA Interiors"</p>
             </div>
@@ -173,10 +200,609 @@
             </div>
         </div>
     </div>
-    <div class="quote quote-black" style="background-image: url('./images/quote-black-bg.jpg');">
+    <div id="portfolio" class="works b-lazy" data-src="./images/works-bg.jpg">
+        <div class="wrapper">
+            <div class="title">Примеры работ</div>
+            <div class="works-list">
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-1.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup">
+                        <div class="work-info">
+                            <div class="work-city">Бухарест</div>
+                            <div class="work-name">Ресторан Ice & Fire</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-2.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup1">
+                        <div class="work-info">
+                            <div class="work-city">Москва</div>
+                            <div class="work-name">List Lab</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-3.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup2">
+                        <div class="work-info">
+                            <div class="work-city">Москва</div>
+                            <div class="work-name">О2 лаунж</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire3</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-4.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup3">
+                        <div class="work-info">
+                            <div class="work-city">Москва</div>
+                            <div class="work-name">Офис Пожарский</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire4</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-5.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup4">
+                        <div class="work-info">
+                            <div class="work-city">Москва</div>
+                            <div class="work-name">Офис Фрунзенская</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire5</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-item-6.jpg" alt="work">
+                    <div class="work-layout call-popup" data-popup="workPopup5">
+                        <div class="work-info">
+                            <div class="work-city">Москва</div>
+                            <div class="work-name">Росконгресс</div>
+                        </div>
+                        <a href="" class="work-link"><span>Посмотреть</span><span class="arrow-link"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-left.svg" alt="arrow"></span></a>
+                    </div>
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire6</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery gallery-carousel owl-carousel">
+        <div class="gallery-item">
+            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/gallery-img-3.jpg" alt="gallery-img-1">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/gallery-img-4.jpg" alt="gallery-img-1">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/gallery-img-5.jpg" alt="gallery-img-1">
+        </div>
+        <div class="gallery-item">
+            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
+        </div>
+    </div>
+    <div id="steps" class="steps-section">
+        <div class="wrapper">
+            <div class="title">Дизайн-проект шаг за шагом</div>
+            <div class="subtitle">Как мы работаем</div>
+            <div class="steps-list">
+                <div class="step">
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Первая встреча</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>до 2 часов</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Вы можете приехать к нам в офис, где мы угостим вас ароматным кофе и ответим на все ваши вопросы о порядке работы над проектом. Также составим подробное техническое задание, с учетом всех ваших пожеланий и видения вашего будущего интерьера. Встреча возможна на другой удобной вам территории.
+                                    </p>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Стоимость</div>
+                                            <p>Бесплатно</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">Назначить встречу</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Обмер</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>2-3 дня</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Обмер помещения для разработки дизайн проекта, фотофиксация, сканирование. Мы выезжаем на ваш обьект, проводим все необходимые измерения, по результатам выдаем вам обмерный план помещения. Эта услуга оплачивается отдельно (от 10 тыс руб, в зависимости от сложности обьекта и его удаленности). Обмер помещения входит в стоимость в случае подписания договора на разработку полного дизайн проекта.
+                                    </p>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Стоимость</div>
+                                            <p>От 10 000 рублей</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big call-popup" data-popup="consultingPopup">Узнать стоимость</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Договор</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>1 день</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Мы подписываем договор, Вами оплачиваются 30% предоплаты, в зависимости от финальной стоимости Предпроектного предложения.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Планировочное решение</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>5-10 рабочих дней</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Мы выдаем оптимальный вариант планировки, на основе технического задания, эргономики и текущего законодательства, с указанием всех элементов мебели и оборудования.
+                                    </p>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Предоплата</div>
+                                            <p>20% от стоимости проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big">Посмотреть образец</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Эскизный проект</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>10 рабочих дней</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Это реалистичная 3D визуализация вашего будущего интерьера. При выполнении этого этапа, мы подбираем отделочные материалы, сантехнику, свет, предметы мебели и оборудование, реальные позиции, которые будут включены в ваш будущий интерьер.
+                                    </p>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Предоплата</div>
+                                            <p>40% от стоимости проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big">Посмотреть пример</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>6</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Рабочая документация</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>от 10 рабочих дней</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <ul class="step-list">
+                                        <li>Обмерочный чертеж с привязками инженерных коммуникаций.</li>   
+                                        <li>План демонтажа стен и перегородок.</li>   
+                                        <li>План помещения после перепланировки с экспликацией.</li>   
+                                        <li>Монтажный план.</li>   
+                                        <li>План потолков с указанием типа используемого материала, отдельных узлов и сечений (количество чертежей зависит от уровня сложности потолка).</li>   
+                                        <li>План полов с указанием: отметки уровня пола, типа напольного покрытия, рисунка и размеров.</li>   
+                                        <li>Экспликация напольных покрытий с указанием площади и артикула выбранного материала.</li>   
+                                        <li>План размещения «теплых» полов с привязкой регулятора.</li>   
+                                        <li>План установки санитарно-технического оборудования.</li>   
+                                        <li>План размещения электроустановочных изделий и осветительных приборов, привязка выпусков освещения, план выключателей с указанием включения групп светильников.</li>   
+                                        <li>Спецификация осветительного оборудования с указанием их типа. </li>   
+                                        <li>План размещения электрических розеток и электровыводов с привязкой геометрических размеров (план электрики).</li>   
+                                        <li>План размещения внутренних блоков кондиционирования и вентиляции. </li>   
+                                        <li>План размещения отопительных приборов.</li>   
+                                        <li>Развертки стен по помещениям с декоративными элементами, с раскладкой плитки с указание размеров, артикула и площади выбранного материала.</li>   
+                                        <li>Спецификация дверей с указанием размеров дверных проемов.</li>   
+                                    </ul>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Предоплата</div>
+                                            <p>30% от стоимости проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big">Посмотреть пример</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>7</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Ведомость и спецификация</div>
+                                    <div class="step-time"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/time-svg.svg" alt="time"> <span>от 5 рабочих дней</span></div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Полный перечень чистовых материалов, сантехники, предметов мебели, свет, оборудование, декор, с указанием артикула, количества и стоимости.
+                                    </p>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Предоплата</div>
+                                            <p>10% от стоимости проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Дизайн-проект готов</div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <p class="step-text">
+                                        Обратитесь к нам за помощью в реализации дизайн-проекта!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-number-wrap">
+                            <div class="step-number">
+                                <span>9</span>
+                            </div>
+                        </div>
+                        <div class="step-cnt">
+                            <div class="step-cnt-top-wrap">
+                                <div class="step-cnt-top">
+                                    <div class="step-name">Авторский надзор</div>
+                                    <div class="step-trigger"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/arrow-top.svg" alt="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="step-info">
+                                <div class="step-info-cnt">
+                                    <div class="step-text-wrap">
+                                        <p class="step-text">
+                                            Проверка соответствия стройки проекту. За дополнительную плату дизайнер сам проследит за реализацией Вашего проекта, чтобы все детали получились именно такими, как было задумано
+                                        </p>
+                                        <p class="step-text-title">Комплектация</p>
+                                        <p class="step-text">Полное снабжение проекта, заказы, логистика, рекламации, доставки и т.д.</p>
+                                    </div>
+                                    <div class="step-price">
+                                        <div class="step-price-icon"><img src="./images/wallet.svg" alt="wallet"></div>
+                                        <div class="step-price-cnt">
+                                            <div class="step-price-title">Предоплата</div>
+                                            <p>40% от стоимости проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-big">Посмотреть пример</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-big step-btn call-popup" data-popup="calculatePopup">Рассчитайте стоимость вашего проекта</a>
+            </div>
+        </div>
+    </div>
+    <div class="quote quote-black b-lazy" data-src="./images/quote-black-bg.jpg">
         <div class="quote-img">
-            <img src="./images/quote-img2.png" alt="quote">
-            <div class="quote-img-sector" style="background-image: url('./images/quote-img-sector.png');">
+            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/quote-img2.png" alt="quote">
+            <div class="quote-img-sector b-lazy" data-src="./images/quote-img-sector.png">
                 <div class="quote-name">Елена Калинина</div>
                 <p>Основатель и руководитель студии "ELKA Interiors"</p>
             </div>
@@ -195,12 +821,12 @@
             </div>
         </div>
     </div>
-    <div class="services-section" style="background-image: url('./images/services-bg.jpg');">
+    <div id="services" class="services-section b-lazy" data-src="./images/services-bg.jpg">
         <div class="services">
             <div class="wrapper">
                 <div class="title">Услуги и цены</div>
                 <div class="services-items">
-                    <div class="services-item"  style="background-image: url('./images/services-item-bg.png');">
+                    <div class="services-item b-lazy"  data-src="./images/services-item-bg.png">
                         <div class="services-item-title">Дизайн-проект</div>
                         <div class="services-item-cnt">
                             <ul class="services-list">
@@ -212,10 +838,10 @@
                                 <li>- От общей площади объекта</li>
                                 <li>- От сложности объекта</li>
                             </ul>
-                            <a href="#" class="btn">Рассчитать</a>
+                            <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать</a>
                         </div>
                     </div>
-                    <div class="services-item"  style="background-image: url('./images/services-item-bg.png');">
+                    <div class="services-item b-lazy"  data-src="./images/services-item-bg.png">
                         <div class="services-item-title">Авторский надзор</div>
                         <div class="services-item-cnt">
                             <ul class="services-list">
@@ -230,10 +856,10 @@
                                 <li>- От удаленности объекта</li>
                                 <li>- От сложности объекта</li>
                             </ul>
-                            <a href="#" class="btn">Рассчитать</a>
+                            <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать</a>
                         </div>
                     </div>
-                    <div class="services-item"  style="background-image: url('./images/services-item-bg.png');">
+                    <div class="services-item b-lazy"  data-src="./images/services-item-bg.png">
                         <div class="services-item-title">Комплектация</div>
                         <div class="services-item-cnt">
                             <ul class="services-list">
@@ -248,10 +874,10 @@
                                 <li>- От сложности объекта</li>
                                 <li>- От общей площади</li>
                             </ul>
-                            <a href="#" class="btn">Рассчитать</a>
+                            <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать</a>
                         </div>
                     </div>
-                    <div class="services-item"  style="background-image: url('./images/services-item-bg.png');">
+                    <div class="services-item b-lazy"  data-src="./images/services-item-bg.png">
                         <div class="services-item-title">Обмер</div>
                         <div class="services-item-cnt">
                             <ul class="services-list">
@@ -268,7 +894,7 @@
                                 <li>- От сложности объекта</li>
                                 <li>- От общей площади</li>
                             </ul>
-                            <a href="#" class="btn">Рассчитать</a>
+                            <a href="#" class="btn call-popup" data-popup="calculatePopup">Рассчитать</a>
                         </div>
                     </div>
                 </div>
@@ -276,8 +902,8 @@
         </div>
         <div class="quote services-quote">
             <div class="quote-img">
-                <img src="./images/quote-img3.png" alt="quote">
-                <div class="quote-img-sector" style="background-image: url('./images/quote-img-sector.png');">
+                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/quote-img3.png" alt="quote">
+                <div class="quote-img-sector b-lazy" data-src="./images/quote-img-sector.png">
                     <div class="quote-name">Елена Калинина</div>
                     <p>Основатель и руководитель студии "ELKA Interiors"</p>
                 </div>
@@ -299,83 +925,66 @@
             </div>
         </div>
     </div>
-    <div class="letters" style="background-image: url('./images/letters-bg.jpg');">
+    <div id="reviews" class="letters b-lazy" data-src="./images/letters-bg.jpg">
         <div class="wrapper">
             <div class="title">Благодарственные письма</div>
             <div class="subtitle">От наших клиентов</div>
             <div class="letters-slider owl-carousel">
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
-                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
+                <a href="./images/letter-1.jpg" data-fancybox="gallery" class="letter"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/letter-1.jpg" alt="letter"></a>
             </div>
         </div>
     </div>
-    <div class="gallery owl-carousel">
-        <div class="gallery-item">
-            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
-        </div>
-        <div class="gallery-item">
-            <img src="./images/gallery-img-1.jpg" alt="gallery-img-1">
-        </div>
-    </div>
-    <div class="helped" style="background-image: url('./images/helped-bg.jpg');">
+    <div class="helped b-lazy" data-src="./images/helped-bg.jpg">
         <div class="wrapper">
             <div class="title">Кому мы уже помогли</div>
-            <div class="helped-list" style="background-image: url('./images/helped-item-bg.png');">
-                <div class="helped-item"><img src="./images/helped-item-1.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-2.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-3.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-4.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-5.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-6.jpg" alt="helped"></div>
-                <div class="helped-item"><img src="./images/helped-item-7.jpg" alt="helped"></div>
+            <div class="helped-list b-lazy" data-src="./images/helped-item-bg.png">
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-1.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-2.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-3.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-4.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-5.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-6.jpg" alt="helped"></div>
+                <div class="helped-item"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/helped-item-7.jpg" alt="helped"></div>
             </div>
             <p>. . . и еще ХХ владельцев недвижимости доверили нам проектирование идельного интерьера.</p>
         </div>
     </div>
-    <div class="order-section" style="background-image: url('./images/order-bg.jpg');">
+    <div class="order-section b-lazy" data-src="./images/order-bg.jpg">
         <div class="wrapper">
             <p class="order-text order-text-s">После окончания ремонта</p>
             <p class="order-text order-text-l">Возвращаем 30% от суммы, потраченной на дизайн*</p>
             <p class="order-text order-text-m">Закажите полный дизайн-проект прямо сейчас!</p>
-            <a href="#" class="btn btn-big">Оставить заявку</a>
+            <a href="#" class="btn btn-big call-popup" data-popup="consultingPopup">Оставить заявку</a>
             <p class="order-text order-text-xs">*в случае договора на дизайн и сопровождение ремонта “под ключ”</p>
         </div>
     </div>
-    <!-- <div class="contacts">
+    <!-- <div id="contacts" class="contacts">
         <div class="map" style="position:relative;overflow:hidden;">
             <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_admirala_makarova_8/Z04Ycg9pQU0BQFtvfXRyd3plZQ==/?ll=37.489886%2C55.836661&sll=37.622504%2C55.753215&sspn=1.972046%2C0.665283&utm_medium=mapframe&utm_source=maps&z=17.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Адмирала Макарова, 8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKgDmH8x"  height="478" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-            <div class="contacts-item" style="background-image: url('./images/contacts-bg.png');">
+            <div class="contacts-item b-lazy" data-src="./images/contacts-bg.png">
                 <div class="contacts-title">Контакты</div>
                 <a href="tel:+89057413267" class="contacts-link">
-                    <span class="contacts-link-img"><img src="./images/c-tel-icon.svg" alt="tel"></span>
+                    <span class="contacts-link-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/c-tel-icon.svg" alt="tel"></span>
                     8 (905) 741 32 67
                 </a>
                 <a href="mailto:mail@elkainteriors.com" class="contacts-link">
-                    <span class="contacts-link-img"><img src="./images/c-mail-icon.svg" alt="mail"></span>
+                    <span class="contacts-link-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/c-mail-icon.svg" alt="mail"></span>
                     mail@elkainteriors.com
                 </a>
                 <div class="contacts-link">
-                    <span class="contacts-link-img"><img src="./images/c-loc-icon.svg" alt="loc"></span>
+                    <span class="contacts-link-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/c-loc-icon.svg" alt="loc"></span>
                     Москва, ул. Адмирала Макарова, д. 6б, корпус 1, апартамент 8
                 </div>
                 <div class="social-icons">
-                    <a href="" class="social social-instagram"><img src="./images/instagram.jpg" alt="instagram"></a>
-                    <a href="" class="social social-facebook"><img src="./images/facebook.jpg" alt="facebook"></a>
+                    <a href="" class="social social-instagram"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/instagram.jpg" alt="instagram"></a>
+                    <a href="" class="social social-facebook"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/facebook.jpg" alt="facebook"></a>
                 </div>
-                <a href="#banner" class="anchor contacts-logo"><img src="./images/contacts-logo.svg" alt="contacts-logo"></a>
+                <a href="#banner" class="anchor contacts-logo"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/contacts-logo.svg" alt="contacts-logo"></a>
             </div>
         </div>
     </div> -->
@@ -396,7 +1005,7 @@
 
     <div id="founderMore" class="popup-wrapper">
         <div class="popup-layout">
-            <div class="popup" style="background-image: url('./images/founder-popup-bg.png');">
+            <div class="popup b-lazy" data-src="./images/founder-popup-bg.png">
                 <div class="popup-cnt">
                     <div class="popup-text">
                         <p>Более 10 лет Дизайнерская Студия "ELKA Interiors" создает не имеющие аналогов, уникальные и технически грамотные интерьерные проекты и уверенно занимает своё место среди именитых дизайнерских студий страны. </p>
@@ -406,26 +1015,461 @@
                         <p>Даже если Вы ещё не решили в каком стиле будет Ваш дом, офис или ресторан, доверьте это решение нам и получайте удовольствие, наблюдая за работой команды <br> "ELKA Interiors"!</p>
                     </div>
                     <div class="founder-popup-img">
-                        <img src="./images/founder-popup-img.png" alt="founder-popup-img">
+                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/founder-popup-img.png" alt="founder-popup-img">
                     </div>
                 </div>
-                <div class="popup-close"><img src="./images/close-btn.svg" alt="close"></div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn.svg" alt="close"></div>
             </div>
         </div>
     </div>
-
-    <!-- <div id="thanksPopup" class="popup-wrapper">
+    <div id="consultingPopup" class="popup-wrapper modal">
         <div class="popup-layout">
             <div class="popup">
-                <div class="popup-img"><img src="./images/popup-img.png" alt="popup-img"></div>
-                <div class="popup-cnt">
-                    <div class="popup-title">Спасибо!</div>
-                    <div class="popup-subtitle">Мы свяжемся с вами в ближайшее время </div>
+                <div class="popup-head"><span>Бесплатная консультация</span></div>
+                <div class="popup-cnt-wrap">
+                    <div class="popup-cnt">
+                        <div class="popup-cnt-form">
+                            <div class="form-title">Мы перезвоним и ответим на все вопросы</div>
+                            <form action="#">
+                                <label class="form-row">
+                                    <input class="form-field" type="text" name="name">
+                                    <span>Имя<span>*</span></span>
+                                </label>
+                                <input class="form-field tel-trigger" type="tel" name="tel" placeholder="+7 (">
+                                <input class="btn btn-big" type="submit" value="Отправить">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" checked="" name="politics">
+                                    <span class="checker"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/checker.svg" alt="checker"></span>
+                                    <span class="checker-name"> Нажимая на кнопку "Отправить", вы принимаете условия  <a class="politics-btn call-popup" data-popup="polyticsPopup" href="#">политики конфиденциальности</a></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="popup-close"><img src="./images/close-btn.svg" alt=""></div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
             </div>
         </div>
-    </div> -->
+    </div>
+    <div id="requestPopup" class="popup-wrapper modal">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-head"><span>Заявка на сотрудничество</span></div>
+                <div class="popup-cnt-wrap">
+                    <div class="popup-cnt">
+                        <div class="popup-cnt-form">
+                            <div class="form-title">Мы свяжемся с вами, чтобы договориться о встрече</div>
+                            <form action="#">
+                                <label class="form-row">
+                                    <input class="form-field" type="text" name="name">
+                                    <span>Имя<span>*</span></span>
+                                </label>
+                                <label class="form-row">
+                                    <input class="form-field" type="email" name="email">
+                                    <span>E-mail<span>*</span></span>
+                                </label>
+                                <input class="form-field tel-trigger" type="tel" name="tel" placeholder="+7 (">
+                                <textarea class="form-field" placeholder="Комментарий"></textarea>
+                                <input class="btn btn-big" type="submit" value="Отправить">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" checked="" name="politics">
+                                    <span class="checker"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/checker.svg" alt="checker"></span>
+                                    <span class="checker-name"> Нажимая на кнопку "Отправить", вы принимаете условия  <a class="politics-btn call-popup" data-popup="polyticsPopup" href="#">политики конфиденциальности</a></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="calculatePopup" class="popup-wrapper modal">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-head"><span>Расчет стоимости проекта</span></div>
+                <div class="popup-cnt-wrap">
+                    <div class="popup-cnt">
+                        <div class="popup-cnt-text">
+                            <p>Все наши проекты уникальны и требуют разных трудозатрат. <br> Стоимость услуг зависит от площади и технической сложности объекта. <br> Поэтому мы не можем разместить на сайте точный ценник, <br> но рассчитаем стоимость вашего дизайн-проекта индивидуально в течение рабочего дня </p>
+                        </div>
+                        <div class="popup-cnt-form">
+                            <div class="form-title">Расскажите о вашем проекте, мы свяжемся с вами <br> и вместе рассчитаем стоимость в индивидуальном порядке</div>
+                            <form action="#">
+                                <label class="form-row">
+                                    <input class="form-field" type="text" name="name">
+                                    <span>Имя<span>*</span></span>
+                                </label>
+                                <label class="form-row">
+                                    <input class="form-field" type="email" name="email">
+                                    <span>E-mail<span>*</span></span>
+                                </label>
+                                <input class="form-field tel-trigger" type="tel" name="tel" placeholder="+7 (">
+                                <label class="form-row form-row-square">
+                                    <input class="form-field" type="text" name="square">
+                                    <span>Площадь помещения<span>*</span></span>
+                                    <span class="square-info">кв.м</span>
+                                </label>
+                                <label class="form-row">
+                                    <input class="form-field" type="text" name="type">
+                                    <span>Тип помещения (ресторан, кафе, отель, бар...)</span>
+                                </label>
+                                <textarea class="form-field" placeholder="Комментарий"></textarea>
+                                <input class="btn btn-big" type="submit" value="Отправить">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" checked="" name="politics">
+                                    <span class="checker"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/checker.svg" alt="checker"></span>
+                                    <span class="checker-name"> Нажимая на кнопку "Отправить", вы принимаете условия  <a class="politics-btn call-popup" data-popup="polyticsPopup" href="#">политики конфиденциальности</a></span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="polyticsPopup" class="popup-wrapper modal">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-head"><span>Политика конфиденциальности</span></div>
+                <div class="popup-cnt-wrap">
+                    <div class="popup-cnt">
+                        <div class="popup-cnt-text no-border">
+                            <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis accumsan ligula, vel porta eros. Ut bibendum dolor est, a sodales mauris fringilla ut. Fusce fringilla ante sit amet orci posuere laoreet. Duis elit risus, molestie in eleifend ut, bibendum a est. Maecenas vestibulum lorem a sollicitudin luctus. Sed egestas dignissim magna quis dictum. Curabitur eu efficitur urna, id bibendum elit. Phasellus pellentesque, elit vitae pharetra ornare, nisi ante luctus orci, a hendrerit lorem sem eu justo. Morbi ut nisl sit amet urna iaculis elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <p>2. Ut quis risus neque. Duis turpis nisi, venenatis commodo lectus sed, vehicula faucibus lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam tristique euismod metus, id placerat mi elementum in. Fusce eu risus vel ipsum aliquam tristique. Etiam hendrerit neque vitae consectetur faucibus. Ut egestas lacinia tincidunt. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin dictum ex at erat molestie gravida vel ac ligula. Vestibulum vehicula sagittis feugiat.</p>
+                            <p>3. Pellentesque condimentum hendrerit nulla, in fringilla magna egestas vitae. Sed eget malesuada erat. Praesent quis magna eget nisl lobortis molestie. Fusce quis neque enim. Ut pretium, eros luctus dapibus imperdiet, magna ipsum tincidunt risus, ac ullamcorper dui nibh tincidunt dui. Praesent magna sem, malesuada et tempor eget, sodales sit amet nibh. Donec finibus, magna ornare fermentum blandit, urna purus posuere felis, id suscipit odio mauris sed nunc. Sed facilisis feugiat lectus sed commodo. Vivamus tincidunt dui id risus mattis, volutpat lobortis risus pulvinar. Integer ullamcorper ac orci ac convallis. Sed luctus metus velit, et dictum lorem placerat nec. Maecenas ornare viverra leo. Phasellus turpis quam, ornare eget lorem eu, dapibus fermentum dolor. Aliquam erat volutpat.</p>
+                            <p>4. Quisque egestas mauris vitae orci facilisis, quis luctus dui consequat. Phasellus gravida sodales quam, ut vestibulum elit commodo sit amet. Vestibulum volutpat, ligula vel interdum varius, diam est tincidunt sem, ac pharetra massa urna nec massa. In ante tellus, dignissim eget odio vel, tincidunt scelerisque velit. Sed accumsan diam ac dolor bibendum, vitae tempus odio vulputate. Integer sit amet ultrices eros. Nam blandit, enim eu laoreet hendrerit, dolor ante vulputate sem, eu convallis mauris nunc tempus dolor. Mauris risus erat, facilisis in ultricies non, vulputate a est. Aenean molestie diam magna, vel accumsan leo luctus non. Donec venenatis aliquam eros in faucibus. Donec ornare ultrices ipsum sit amet auctor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup1" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup2" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup3" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup4" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
+    <div id="workPopup5" class="popup-wrapper work-popup">
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="popup-cnt">
+                    <div class="work-popup-block">
+                        <div class="work-popup-slider gallery owl-carousel">
+                            <div class="work-popup-item"><img src="./images/work-popup-1.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-2.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-3.jpg" alt="work-popup"></div>
+                            <div class="work-popup-item"><img src="./images/work-popup-4.jpg" alt="work-popup"></div>
+                        </div>
+                        <div class="work-popup-cnt-wrap b-lazy b-lazy"   data-src="./images/white-bg.jpg">
+                            <div class="work-popup-cnt b-lazy b-lazy"  data-src="./images/work-popup-item-bg.png">
+                                <div class="work-popup-cnt-info">
+                                    <div class="work-popup-title">Ресторан Ice&Fire2</div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-1.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Где? </div>
+                                            <div class="work-popup-row-cnt-text">Историческое здание в Бухаресте</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-2.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Для кого?</div>
+                                            <div class="work-popup-row-cnt-text">Гости ресторана - обеспеченные люди, ищущие авторскую кухню
+                                                в изысканной обстановке</div>
+                                        </div>
+                                    </div>
+                                    <div class="work-popup-row">
+                                        <div class="work-popup-icon"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/work-popup-icon-3.svg" alt="popup"></div>
+                                        <div class="work-popup-row-cnt">
+                                            <div class="work-popup-row-cnt-title">Задача</div>
+                                            <div class="work-popup-row-cnt-text">Сдержанно, но четко отразить в интерьере концепцию - сочетание льда и пламени</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-popup-text">
+                                    <p class="popup-text-title">Концепция</p>
+                                    <p>Само название заведения указывает на кухню Ice & Fire - это сочетание блюд на гриле и десертов с огнем и холодных закусок, которые подаются на льду. Несущая конструкция, которая разделяет сравнительно небольшое - 140 кв. м - помещение, позволила легко создать две контрактные зоны - “огненную” и “ледяную”.</p>
+                                    <p>Вместе с тем, они не противопоставлены, а дополняют друг друга. Для этого использован целый ряд элементов - единое оформление пола и стен, зеркала, общая мебель.</p>
+                                    <p class="popup-text-title">Первый зал</p>
+                                    <p>Первый зал передает стихию огня не только цветами - красным и золотым, напоминающими пламя, и серым - цветом пепла. В нем есть и живой огонь: камин в золотой стене из перфорированного металла, рядом с которой расположена небольшая лаунж-зона, а напротив него - настоящие факелы.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-big call-popup" data-popup="requestPopup">У меня похожая задача</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn-white.svg" alt="close"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/libs/jquery-3.3.1.min.js"></script>
     <script src="./js/libs/jquery.maskedinput.min.js"></script>
